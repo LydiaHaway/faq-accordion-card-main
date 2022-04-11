@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "KumbhSans";
+    src: url(./font/KumbhSans-Regular.ttf);
+}
+
+
+body {
+    font-family: "KumbhSans";
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    height: 800px;
+}
+
+.ic {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    padding-left: 30px;
+    margin-top: -215px;
+}
+
+.bg {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    padding-left: 30px;
+    margin-top: -100px;
+
+}
+
+
+.faq {
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 150px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.q1,
+.q2,
+.q3,
+.q4,
+.q5 {
+    font-size: 15px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.q1:hover,
+.q2:hover,
+.q3:hover,
+.q4:hover,
+.q5:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+
+hr {
+    width: 90%;
+    color: hsla(240, 4%, 91%, 0.247);
+}
+
+.a1,
+.a2,
+.a3,
+.a4,
+.a5 {
+    display: none;
+    font-size: 15px;
+}
+
+.attribution {
+    text-align: center;
+}
+
+.iconfaq_desk {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.active_q {
+    font-weight: 700;
+}
+
+.rotade {
+    transform: rotate(180deg);
+}
+
+
+@media screen and (min-width: 1020px) {
+
+    body {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .iconfaq_mob {
+        display: none;
+    }
+
+    .iconfaq_desk {
+        display: block;
+    }
+
+    .ic_d {
+        position: absolute;
+        padding-top: 50px;
+        margin-left: -100px;
+    }
+
+    .bg_desk {
+        position: absolute;
+        margin-left: -550px;
+        margin-top: -300px;
+    }
+
+    .box {
+        position: absolute;
+        padding-top: 200px;
+        margin-left: -100px;
+    }
+
+    .quest {
+        margin-left: 50%;
+        margin-right: 20%;
+        margin-bottom: 10%;
+        font-size: 20px;
+        text-align: left;
+    }
+
+    hr {
+        width: 95%;
+    }
+
+
+}
